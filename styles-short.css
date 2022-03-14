@@ -1,0 +1,79 @@
+/* .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a192f;
+} */
+
+body {
+  background-color: #0a192f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number {
+  color: aquamarine;
+  font-size: 2rem;
+}
+
+.menu-short-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-short {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: start;
+  color: #ccd6f6;
+}
+
+li {
+  display: flex;
+  /* gap: 10rem; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigates {
+  text-decoration: none;
+  color: #ccd6f6;
+  font-size: 2rem;
+}
+
+.resume {
+  height: 10vh;
+  width: 25vw;
+  background-color: #0a192f;
+  border: 2px solid aquamarine;
+  border-radius: 5px;
+  font-size: 2.5rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 10vh;
+  color: aquamarine;
+}
+
+@media screen and (max-width: 768px) {
+  .resume {
+    width: 35vh;
+  }
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.download-resume {
+  text-decoration: none;
+  color: aquamarine;
+}

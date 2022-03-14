@@ -28,7 +28,7 @@
   .small-header {
     display: flex;
     justify-content: end;
-    margin-right: 20px;
+    margin-right: auto;
   }
 }
 
@@ -147,18 +147,26 @@ body {
 
 /*check out course*/
 .course {
-  height: 50px;
-  width: 250px;
+  height: 7vh;
+  width: 15vw;
   background-color: #0a192f;
   border: 2px solid aquamarine;
   border-radius: 5px;
   text-align: center;
   vertical-align: middle;
-  line-height: 50px;
+  line-height: 7vh;
   color: aquamarine;
 }
 
-.first {
+@media screen and (max-width: 768px) {
+  .course {
+    height: 7vh;
+    width: 50vw;
+    line-height: 7vh;
+  }
+}
+
+.first-wrapper {
   margin: 10% 20% 8% 20%;
 }
 
@@ -263,7 +271,7 @@ hr {
 @media screen and (max-width: 768px) {
   .me-img {
     height: 45vh;
-    width: 35vw;
+    width: 60vw;
   }
 }
 
@@ -281,10 +289,12 @@ hr {
 
 /* what I do */
 .service-container-wrapper {
-  margin: 0.5% 20% 8% 20%;
+  /* margin: 0.5% auto 8% auto; */
   display: flex;
   gap: 2rem;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -307,7 +317,7 @@ hr {
 @media screen and (max-width: 768px) {
   .service-container {
     height: 45vh;
-    width: 30vw;
+    width: 60vw;
   }
 }
 
@@ -316,12 +326,14 @@ hr {
   width: 20vw;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 768px) {
   .web-img {
     height: 20vh;
-    width: 30vw;
+    width: 60vw;
+    object-fit: contain;
   }
 }
 
@@ -429,6 +441,9 @@ footer {
 @media screen and (max-width: 768px) {
   .contact-icons {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
   }
 }
 .footer-message {
@@ -437,13 +452,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-  }
   .footer-message {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
   }
 }

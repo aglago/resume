@@ -22,6 +22,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
+}
+
+.services {
+  margin-right: 20px;
 }
 
 .menu-short {
@@ -62,9 +67,11 @@ li {
 
 @media screen and (max-width: 768px) {
   .resume {
-    width: 35vh;
+    height: 10vh;
+    width: 50vw;
   }
 }
+
 .service {
   display: flex;
   flex-direction: column;
